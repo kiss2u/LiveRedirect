@@ -160,6 +160,8 @@ func (t *Tvm3u) GetTvM3u(c *gin.Context) {
 	fmt.Fprintln(c.Writer, "http://"+c.Request.Host+"/ysptp/cctv4k_10m.m3u8")
 	fmt.Fprintln(c.Writer, "#EXTINF:-1,tvg-id=\"cctv4k\" tvg-name=\"cctv4k\" tvg-logo=\"https://epg.v1.mk/logo/cctv4k.png\" group-title=\"4K频道\",cctv4k")
 	fmt.Fprintln(c.Writer, "http://"+c.Request.Host+"/ysptp/cctv4k.m3u8")
+	fmt.Fprintln(c.Writer, "#EXTINF:-1,tvg-id=\"北京纪实科教8K\" tvg-name=\"北京纪实科教8K\" tvg-logo=\"https://epg.v1.mk/logo/北京纪实科教8K.png\" group-title=\"8K频道\",北京纪实科教8K")
+	fmt.Fprintln(c.Writer, "https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8")
 	fmt.Fprintln(c.Writer, "#EXTINF:-1,tvg-id=\"cctv8k\" tvg-name=\"cctv8k\" tvg-logo=\"https://epg.v1.mk/logo/cctv8k.png\" group-title=\"8K频道\",cctv8k_36m")
 	fmt.Fprintln(c.Writer, "http://"+c.Request.Host+"/ysptp/cctv8k_36m.m3u8")
 	fmt.Fprintln(c.Writer, "#EXTINF:-1,tvg-id=\"cctv8k\" tvg-name=\"cctv8k\" tvg-logo=\"https://epg.v1.mk/logo/cctv8k.png\" group-title=\"8K频道\",cctv8k_120m")
